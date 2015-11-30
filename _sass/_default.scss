@@ -1,0 +1,242 @@
+@import "fonts.scss";
+
+body {
+    font-family: segoe UI, sans-serif;
+    background-color: $white;
+    color:$white;
+}
+
+h1 {
+    font-size: 1.8em;
+    color:$red;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @media (min-width:60.0625em) {
+        font-size: 4.3em;
+    }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+
+    div {
+        color: $white;
+        font-size: 1.1em;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        @media (min-width:40.0625em) {
+            font-size: 4em;
+        }
+    }
+}
+
+section {
+    letter-spacing: 0.2em;
+    line-height: 1.3em;
+    padding: 0.6em;
+    text-align: center;
+
+    p {
+        margin: 0.4em;
+    }
+
+    &.red {
+        background-color: $red;
+        color: $white;
+    }
+
+    &.yellow {
+        background-color: #F1C40F;
+        color: #fff;
+
+        svg {
+            height: 14em;
+            margin-top: 0.8em;
+
+            @media (min-width:40.0625em) {
+                height: 11em;
+                width: 12em;
+            }
+        }
+
+        q {
+            display: none;
+
+            @media (min-width:40.0625em) {
+                width: 50%;
+            }
+
+            @media (min-width:80.0625em) {
+                font-size: 0.8em;
+                width: 33%;
+                float: left;
+                text-align: left;
+                display: inline-block;
+                margin: 2em;
+            }
+
+            &:first-of-type {
+                display: none;
+
+                @media (min-width:40.0625em) {
+                    font-size: 0.8em;
+                    float: left;
+                    text-align: left;
+                    display: inline-block;
+                    margin: 2em;
+                }
+            }
+
+            &:before {
+                content: "\201C";
+                font-family: times new roman;
+                font-size: 3em;
+            }
+        }
+    }
+
+    hr {
+        @media (min-width:40.0625em) {
+            background: none repeat scroll 0 0 #FFFFFF;
+            border: 1px solid #FFFFFF;
+        }
+    }
+
+    &.orange {
+        background-color: #e67e22;
+        color: #fff;
+    }
+
+    &.blue {
+        background-color: #34495E;
+        color: #fff;
+
+        ul {
+            text-align: center;
+
+
+            li {
+                display: inline;
+
+                @media (min-width:40.0625em) {
+                    font-size: 2em;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    &.black {
+        background-color: #000;
+
+        img {
+            float: none;
+        }
+
+        div {
+            @media (min-width:40.0625em) {
+                text-align: left;
+                width: 33%;
+                float: left;
+            }
+        }
+    }
+}
+
+
+.svg-owl {
+    height: 9em;
+    width: 11.625em;
+    margin-top: 1em;
+}
+
+.svg-logo {
+    height: 9em;
+    width: 11.625em;
+    margin-top: 1em;
+
+    .triangle {
+        fill: #EA323D;
+        fill-opacity: 1;
+        fill-rule: evenodd;
+        stroke: #fff;
+        stroke-width: 2px;
+        stroke-linecap: butt;
+        stroke-linejoin: miter;
+        stroke-opacity: 1;
+    }
+
+    .power {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2;
+        stroke-opacity: 1;
+    }
+
+    .powerLine {
+        fill: #fff;
+        fill-opacity: 1;
+    }
+}
+
+section ul {
+    font-size: 0.7em;
+    font-weight: bold;
+    list-style: circle outside none;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-top: 1em;
+    text-align: left;
+}
+
+footer {
+    letter-spacing: 0.1em;
+    padding: 0.6em;
+    font-family: segoe UI;
+    height: 1.2em;
+    clear: both;
+    line-height: 1.2em;
+    margin-top: 8px;
+
+    svg {
+        fill: $red;
+        vertical-align: text-bottom;
+        height: 1em;
+        width: 1.4em;
+    }
+
+    ul {
+        li {
+            color:red;
+            display: inline;
+
+            &:after {
+                content: "|";
+            }
+
+            &:last-child:after {
+                content: "";
+            }
+
+            &:last-child {
+                padding-left: 0.5em;
+            }
+
+            a {
+                color: $red;
+                text-decoration: none;
+                padding: 1em;
+
+                &:active, &:hover {
+                    color: $red;
+                    background-color:$black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

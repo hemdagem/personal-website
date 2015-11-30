@@ -2,22 +2,45 @@
 layout: default
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<section class="red">
+    <h2> GEEK, FOOTBALL LOVER WITH AN UNHEALTHY ADDICTION TO TECHNOLOGY.</h2>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <div>
+        {% include triforce.svg %}
+    </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>
+
+
+</section>
+<section class="blue">
+    <h2> I CODE FOR A LIVING AND LOVE DABBLING WITH THE FOLLOWING:</h2>
+    <ul>
+        <li>C#</li>
+        <li>ASP.NET</li>
+        <li>MVC</li>
+        <li>JAVASCRIPT</li>
+    </ul>
+</section>
+
+<section class="yellow">
+
+    <h2> ARSENAL TIL I DIE </h2>
+
+    <q> I REALLY LIKE ARSENAL. BUT YOU, DO YOU REALLY LIKE ARSENAL? OR JUST WITH TROPHIES?<hr /> <span>DENNIS BERGKAMP</span> </q>
+  {% include arsenallogo.svg %}
+
+    <q>
+        IT'S NOT IMPOSSIBLE. I KNOW IT WILL BE DIFFICULT FOR US
+
+        TO GO THROUGH THE SEASON UNBEATEN.
+
+        BUT IF WE KEEP THE RIGHT ATTITUDE IT'S POSSIBLE
+        WE CAN DO IT.
+        <hr />
+        <span>ARSENE WENGER</span>
+    </q>
+
+</section>
