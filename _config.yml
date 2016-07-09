@@ -11,9 +11,10 @@ email: your-email@domain.com
 description: Website of Agile Web Developer, Hemang Rajyaguru
 keywords: Hemang, Hem, Rajyaguru, Developer, Agile
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://hemangrajyaguru.com" # the base hostname & protocol for your site
+url: "http://hemdagem.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+gems: [jekyll-assets]
