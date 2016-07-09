@@ -2,11 +2,16 @@
 layout: default
 title: The list
 ---
+<style>
+.list:nth-child(even) {background: #F1C40F;}
+.list:nth-child(odd) {background: #e67e22;}
+</style>
+
 <section class="blue">
 <h2>A list of famous moments in Film history that make us laugh</h2>
 </section>
 {% for moment in site.data.list %}
-<section class="{{moment.color}}">
+<section class="list">
   <ul style="list-style-type:none; text-align:center;">
     <li>
       <p>Film: {{moment.film}}</p>
