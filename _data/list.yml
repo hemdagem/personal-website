@@ -22,9 +22,16 @@
 - film: "Spartan"
   scene: "The Arm Break"
   year: "2004"
-  imdb: "http://www.imdb.com/title/tt0360009"
+  imdb: "http://www.imdb.com/title/tt0360009/"
   img: "spartan.jpg"
   video: "https://www.youtube.com/watch?v=qkxD0JmS5J8"
+  
+- film: "Closer"
+  scene: "The White Coat"
+  year: "2004"
+  imdb: "http://www.imdb.com/title/tt0376541/"
+  img: "default.png"
+  video: "#"
 
 - film: "The Sentinel"
   scene: "The Run Across The Stairs"
