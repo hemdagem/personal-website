@@ -33,6 +33,13 @@
   img: "closer.jpg"
   video: "#"
 
+- film: "Kill Bill: Vol 2"
+  scene: "Esteban"
+  year: "2004"
+  imdb: "http://www.imdb.com/title/tt0378194/"
+  img: "kill-bill-2.jpg"
+  video: "#"
+
 - film: "The Sentinel"
   scene: "The Run Across The Stairs"
   year: "2006"
