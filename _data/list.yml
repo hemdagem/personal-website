@@ -46,3 +46,10 @@
   imdb: "http://www.imdb.com/title/tt0337921/"
   img: "the-sentinel.jpg"
   video: "#"
+
+- film: "Once upon a time in Hollywood"
+  scene: "The Flamethrower"
+  year: "2019"
+  imdb: "#"
+  img: "#"
+  video: "#"
