@@ -1,6 +1,6 @@
 localStorage.setItem("workouts", JSON.stringify([
-        ["shuttle runs", "toe taps", "jogs and squats", "burpees"],
-        ["plank", "stomach crunches", "best", "hello"],
+        ["shuttle runs", "toe taps", "jogs and squats", "burpees", "sprints"],
+        ["plank", "stomach crunches", "foot switches", "toe touches on back"],
         ["lunges", "be", "great", "nope"]]));
 
 function generateExercises(numberOfGroups) {
@@ -9,8 +9,7 @@ function generateExercises(numberOfGroups) {
     for (let i = 0; i < numberOfGroups; i++) {
         finalGroups.push([]);
         workouts.forEach((workout, w) => {
-            var workout = GetItem(workouts[w]);
-            finalGroups[i].push(workout);
+            finalGroups[i].push(getItem(workout));
         });
     }
 
@@ -22,8 +21,8 @@ function generateExercises(numberOfGroups) {
     return finalGroups;
 }
 
-function GetItem(group) {
-    var index = generateIndex(group.length - 1);
+function getItem(group) {
+    var index = generateIndex(group.length);
     var exercises = { exercise: group[index] };
     group.splice(index, 1);
     return exercises;
