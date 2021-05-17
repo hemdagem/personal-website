@@ -1,14 +1,14 @@
 localStorage.setItem("workouts", JSON.stringify([
-/* Cardio */["shuttle runs", "toe taps", "jogs and squats", "burpees", "sprints", "Squat Jumps"],
-/* Core */ ["plank", "stomach crunches", "foot switches", "toe touches on back", "Side plank"],
-/* Legs */ ["lunges", "lunge backwards and forwards same leg", "lunge - body twist each side", "side lunges"]]));
+/* Cardio */["Shuttle runs", "Toe taps", "Jogs and squats", "Burpees", "Sprints", "Squat jumps"],
+/* Core */ ["Plank", "Stomach crunches", "Foot switches", "Toe touches on back", "Side plank"],
+/* Legs */ ["Lunges", "Lunge backwards and forwards same leg", "Lunge - body twist each side", "Side lunges"]]));
 
 function generateExercises(numberOfGroups) {
     var workouts =JSON.parse(localStorage.getItem("workouts"));
     var finalGroups = [];
     for (let i = 0; i < numberOfGroups; i++) {
         finalGroups.push([]);
-        workouts.forEach((workout, w) => {
+        workouts.forEach((workout) => {
             finalGroups[i].push(getItem(workout));
         });
     }
